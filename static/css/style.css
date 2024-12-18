@@ -1,0 +1,152 @@
+
+/* CSS for PC screens */
+
+body{
+    background-color: #1c2841;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+fieldset{
+    margin-left: 25%;
+    background-color: #1c2841;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border-style: solid;
+    width: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+label{
+    color: green;
+    text-decoration: solid;
+}
+
+select{
+    color: red;
+    width: 20%;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+option{
+    color: red;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    background-color: white;
+    width: 20%;
+    padding: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    color: red;
+    font-weight: 600;
+}
+
+button[type="submit"] {
+    background-color: green;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    text-decoration: solid;    
+    font-family: sans-serif;
+    width: 10%;
+    font-size: 120%;
+    margin-left: 45%;
+    cursor: pointer;
+}
+
+h3{
+    text-align: center;
+    color: red;
+    font-style: italic;
+    font-family: Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+/* CSS for phone screens */
+
+@media screen and (max-width: 400px){
+    body{
+        background-color: #1c2841;
+    }
+    
+    h1{
+        text-align: center;
+        color: green;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    
+    fieldset{
+        padding-top: 5px;
+        margin-left: 10%;
+        background-color: #1c2841;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 6px;
+        border-style: solid;
+        width: 85%;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    
+    label{
+        color: green;
+        font-size: medium;
+        text-decoration: solid;
+    }
+    
+    select{
+        color: red;
+        width: 40%;
+        padding: 1px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    option{
+        color: red;
+        font-weight: 600;
+    }
+    
+    input[type="text"] {
+        background-color: white;
+        width: 20%;
+        padding: 1px;
+        border-style: solid;
+        border-radius: 5px;
+        color: red;
+        font-weight: 600;
+    }
+    
+    button[type="submit"] {
+        background-color: green;
+        text-align: center;
+        color: white;
+        border-radius: 5px;
+        text-decoration: solid;    
+        font-family: sans-serif;
+        width: 30%;
+        font-size: 100%;
+        margin-left: 37%;
+    }
+    
+    h3{
+        text-align: center;
+        color: red;
+        font-style: italic;
+        font-family: Verdana, sans-serif;
+    }
+}

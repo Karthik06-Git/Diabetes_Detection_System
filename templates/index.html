@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1><b> Diabetes Detection System </b></h1><br><br>
+    <form action="/detect" method='post'>
+        <fieldset>
+            <!------------gender-------------><br>
+            <label for="gender"> <b>Gender :-</b> </label>
+            <select name="gender" id="gender" required="required">
+                <option value="Male"> Male </option>
+                <option value="Female"> Female </option>
+                <option value="Other"> Other </option>
+            </select> <br><br>
+            <!------------age---------------->
+            <label for="age"> <b>Age :-</b> </label>
+            <input type="text" id="age" name="age" required="required"> <br><br>
+            <!------------smoking_history------------->
+            <label for="smoking"> <b>Smoking History :-</b></label>
+            <select name="smoking" id="smoking" required="required">
+                <option value="never"> Never Smoked </option>
+                <option value="ever"> Ever Smoked </option>
+                <option value="current"> Current Smoker </option>
+                <option value="former"> Former Smoker </option>
+                <option value="not_current"> Not-Current Smoker </option>
+                <option value="no_info"> No Info </option>
+            </select> <br><br>
+            <!------------bmi------------->
+            <label for="bmi"> <b>BMI (Body Mass Index) :-</b> </label>
+            <input type="text" id="bmi" name="bmi" required="required"> <br><br>
+            <!------------HbA1c_level------------->
+            <label for="HbA1c_level"> <b>HbA1c_level (Haemoglobin) :-</b> </label>
+            <input type="text" id="HbA1c_level" name="HbA1c_level" required="required"> <br><br>
+            <!------------blood_glucose_level------------->
+            <label for="glucose_level"> <b>Blood Glucose Level :-</b> </label>
+            <input type="text" id="glucose_level" name="glucose_level" required="required"> <br><br>
+        </fieldset>
+        <br>
+        <button type="submit"> <b>Detect</b> </button>
+    </form>
+    <br>
+    <h3>{{prediction}}</h3>
+
+</body>
+</html>
